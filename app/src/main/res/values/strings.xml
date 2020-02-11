@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyGoogleSearch</string>
+    <string name="toolbarName">Поиск</string>
 </resources>
