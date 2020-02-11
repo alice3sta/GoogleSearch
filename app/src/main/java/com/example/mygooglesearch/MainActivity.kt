@@ -1,9 +1,11 @@
 package com.example.mygooglesearch
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), SearchView {
+
+    val presenter: SearchPresenter = SearchPresenter(this, SearchInteractorImpl(SearchRepoImpl()))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
