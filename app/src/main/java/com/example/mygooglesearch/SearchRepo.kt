@@ -1,3 +1,7 @@
 package com.example.mygooglesearch
 
-interface SearchRepo
+import io.reactivex.Observable
+
+interface SearchRepo {
+    fun getResult(searchValue: String): Observable<List<SearchResult>>
+}

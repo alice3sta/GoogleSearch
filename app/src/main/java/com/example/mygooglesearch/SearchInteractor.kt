@@ -1,3 +1,8 @@
 package com.example.mygooglesearch
 
-interface SearchInteractor
+import io.reactivex.Observable
+
+interface SearchInteractor {
+
+    fun getSearchResult(searchValue: String): Observable<List<SearchResult>>
+}
